@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_db</h1>
+        <table border="3px">
+            <tr>
+                <th>topic_name</th>
+            </tr>
+            
+            {% for i in to %}
+            <tr>
+                <td>{{i.topic_name}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+            <hr><hr><hr>
+        <table border="3px">
+            <tr>
+                <th>id/pk</th>
+                <th>topic_name</th>
+                <th>name</th>
+                <th>url</th>
+            </tr>
+            
+            {% for j in wo %}
+            <tr>
+                <td>{{j.id}}</td>
+                <td>{{j.topic_name}}</td>
+                <td>{{j.name}}</td>
+                <td>{{j.url}}</td>
+            </tr>
+            {% endfor %}     
+        </table>
+            <hr><hr><hr>
+        <table border="2px">
+            <tr>
+                <th>id/pk</th>
+                <th>name</th>
+                <th>date</th>
+                <th>auther</th>
+            </tr>
+            {% for k in ao %}
+            <tr>
+                <th>{{k.id}}</th>
+                <th>{{k.name}}</th>
+                <th>{{k.date}}</th>
+                <th>{{k.auther}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>
